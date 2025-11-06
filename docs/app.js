@@ -5,7 +5,7 @@ let filas = [];
 
 async function cargarArchivo() {
   try {
-    const respuesta = await fetch("parts_list_e.txt"); // archivo fijo
+    const respuesta = await fetch("https://raw.githubusercontent.com/Biblioteca-Anatomica-3D/BodyParts3D/refs/heads/main/docs/parts_list_e.txt"); // archivo fijo
     if (!respuesta.ok) {
       throw new Error("No se pudo cargar el archivo parts_list_e.txt");
     }
